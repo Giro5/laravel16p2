@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">My Site</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -13,9 +13,24 @@
                 <a class="nav-link" href="/catalog">Catalog</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+
+        @if(session()->get("auth") == true)
+
+        <div class="form-inline my-2 my-lg-0 text-light">
+            You login as: {{session()->get("login")}}
+        </div>
+
+        @else
+
+        <div class="form-inline my-2 my-lg-0">
+            <a href="/auth">
+                <button class="btn btn-outline-success my-2 my-sm-0">Sign In</button>
+            </a>
+            <a href="/reg">
+                <button class="btn btn-outline-success my-2 my-sm-0 ml-3">Sign Up</button>
+            </a>
+        </div>
+
+        @endif
     </div>
 </nav>

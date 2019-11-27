@@ -14,7 +14,7 @@
         @foreach($result as $card)
 
         <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="images/{{$card->image}}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{$card->title}} ID: {{$card->id}}</h5>
                 <p class="card-text">{{$card->text}}</p>
