@@ -19,7 +19,7 @@
             <label for="exampleInputPassword1">Password</label>
             <input type="password" name="password" class="form-control" id="exampleInputPassword1" required>
         </div>
-        <button type="submit" class="btn btn-danger">Sign In</button>
+        <button type="submit" class="btn btn-primary">Sign In</button>
     </form>
 </div>
 

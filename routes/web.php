@@ -29,4 +29,7 @@ Route::get("/auth", "AuthController@page");
 Route::get("/reg", "RegController@page");
 
 Route::post("/reg/action", "RegController@action");
+
 Route::post("/auth/action", "AuthController@action");
+
+Route::get("/exit", "ExitController@page");
