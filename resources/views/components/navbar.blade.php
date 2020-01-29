@@ -18,13 +18,16 @@
 
         <div class="form-inline my-2 my-lg-0 text-light">
             You login as: {{session()->get("login")}}
+            <a href="/exit">
+                <button class="btn btn-outline-danger my-2 my-sm-0 ml-3">Sign Out</button>
+            </a>
         </div>
 
         @else
 
         <div class="form-inline my-2 my-lg-0">
             <a href="/auth">
-                <button class="btn btn-outline-success my-2 my-sm-0">Sign In</button>
+                <button class="btn btn-outline-primary my-2 my-sm-0">Sign In</button>
             </a>
             <a href="/reg">
                 <button class="btn btn-outline-success my-2 my-sm-0 ml-3">Sign Up</button>

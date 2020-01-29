@@ -31,7 +31,7 @@
             <label for="exampleInputPassword1">Password</label>
             <input type="password" name="password" class="form-control" id="exampleInputPassword1" required>
         </div>
-        <button type="submit" class="btn btn-danger">Sign Up</button>
+        <button type="submit" class="btn btn-success">Sign Up</button>
     </form>
 </div>
 
